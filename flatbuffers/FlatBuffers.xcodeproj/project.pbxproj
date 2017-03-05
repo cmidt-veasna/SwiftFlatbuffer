@@ -1,0 +1,2268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		23032807B03F4DFA831E0EB9 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A860A660A95E4902B43B5FA0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				90B868EABDBA42C2B369FB5E /* CMake Rules */,
+			);
+			dependencies = (
+				676CCC2B06CD48C2A3DE08B8 /* PBXTargetDependency */,
+				89B9B4D060EC42D99B087CAF /* PBXTargetDependency */,
+				F5DCE87009E44D0A8EECFA77 /* PBXTargetDependency */,
+				EE3C2B18C3FA460F9A93523F /* PBXTargetDependency */,
+				09939B29239A49E7A8CAAD5C /* PBXTargetDependency */,
+				74415CC140F14FFEA1A2FCAB /* PBXTargetDependency */,
+				0573525CD08040A3B6890E2A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		44079989DCB24F60812BFEB6 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 02B27640A30441048C4A319B /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				F518A2A0A0734EFC8E77CEB2 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				A00EF0F9E30E4461959B9BA4 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		665C09EB1114442E983838F2 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8CED81094D8844B4BE0EA70F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				F9EF15EA2C4A4A3299306A2A /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		DD7B02181B29446DA6AD9D11 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C8DFEBECFB744F95BDDC0640 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				E7A9C84480CC4A7C9A026D27 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01D19BA476D0470DB2B16F33 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXBuildFile; fileRef = BF8FC575BB3B465BBCC5FF28 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */; settings = {COMPILER_FLAGS = ""; }; };
+		028500F0700D4D25929E7B60 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXBuildFile; fileRef = 0EDB912BD185424EBA63CDA2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		02F28AAAEE194862AC419EBC /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXBuildFile; fileRef = F477A6F2E2A54F209F3B62D9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */; settings = {COMPILER_FLAGS = ""; }; };
+		0656F30CEA6248B094E8E219 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */ = {isa = PBXBuildFile; fileRef = 92BBA20A13094F1EB7DFEC6A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */; settings = {COMPILER_FLAGS = ""; }; };
+		0A35D9EDA596410B92232B95 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */ = {isa = PBXBuildFile; fileRef = B423FCB09AEB4746844C74AD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */; settings = {COMPILER_FLAGS = ""; }; };
+		0FF72A8F40DE413F8DC2E348 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXBuildFile; fileRef = 8A5166CD80404DBA86EAD52A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */; settings = {COMPILER_FLAGS = ""; }; };
+		133A985A4D214521A4DF71B6 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */ = {isa = PBXBuildFile; fileRef = E5F65ECEA9F348AC81ACF83A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */; settings = {COMPILER_FLAGS = ""; }; };
+		14D7CDF4E04A4DE4B537EB28 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXBuildFile; fileRef = AA0AC69D8FAB4CD392B26F6C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */; settings = {COMPILER_FLAGS = ""; }; };
+		14FE0E77EE48480DBF97E22C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXBuildFile; fileRef = 72AB6FC2B41845FE8104EBB9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */; settings = {COMPILER_FLAGS = ""; }; };
+		197B4C5098BC4F2EA8BCF414 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 32C2D2B1B5204455A57C70DD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		1A951D803205455095A8145F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.cc */ = {isa = PBXBuildFile; fileRef = 8904ACB0CD674BE489CDBE9C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		1B5AA58F6F3E4478BDC7726A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_text.cpp */ = {isa = PBXBuildFile; fileRef = 2A38B8C409574252B6C4D259 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_text.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		201A4A10442A4BE0A7B637FA /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/test.cpp */ = {isa = PBXBuildFile; fileRef = 0487B4031E04418F8417F816 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/test.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		21F40003036D4291ACCE56C9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXBuildFile; fileRef = 85644ABC7C3B452A930963EC /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		27205134785F40149AA1F2A9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXBuildFile; fileRef = 8A223774547C4F5883012D21 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */; settings = {COMPILER_FLAGS = ""; }; };
+		2C076488A16F428783C1E621 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXBuildFile; fileRef = 7A2DBFCE5CAB4181AA065A09 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2DAA94EBF170449D994B87D4 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXBuildFile; fileRef = 30AED6A70DD94EB99B8C57EE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */; settings = {COMPILER_FLAGS = ""; }; };
+		32AEE76D0FAA46259B692E07 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.h */ = {isa = PBXBuildFile; fileRef = BE6993E8CC534732A86FEDE2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.h */; settings = {COMPILER_FLAGS = ""; }; };
+		37E73FB8A8734197A807DAAD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXBuildFile; fileRef = 32C4C02A15E2436D825A356C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */; settings = {COMPILER_FLAGS = ""; }; };
+		3C32B035F2F646E3A73375E4 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2CE4C99848FA4052BEC8E629 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		3CCF31900C2B434E8DC31581 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXBuildFile; fileRef = 475B2895050146D9AF101178 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */; settings = {COMPILER_FLAGS = ""; }; };
+		45711AFED194463DB4375D39 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXBuildFile; fileRef = 1AEEC1547BCD46B2BEA0E368 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */; settings = {COMPILER_FLAGS = ""; }; };
+		49661E73C7EE458FB84CD853 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXBuildFile; fileRef = F73CA94A80084F5EA441EE50 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */; settings = {COMPILER_FLAGS = ""; }; };
+		4AC87F4A6F304D3D8E9533B0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_python.cpp */ = {isa = PBXBuildFile; fileRef = 1ABBEEE72B5041E28E413867 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_python.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4C92F03650F94FCAB2D478F7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXBuildFile; fileRef = 951A4B50616A46F0AE200217 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4FB14ED71E5A44678D2A72F5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXBuildFile; fileRef = 5B3488B38F304DCBB142E2EF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */; settings = {COMPILER_FLAGS = ""; }; };
+		53F56D9DB1864B0CAECEE199 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXBuildFile; fileRef = 3F0635512F2749CBB194338A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */; settings = {COMPILER_FLAGS = ""; }; };
+		58D53DC55349407ABC2CA903 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXBuildFile; fileRef = D6746680382143EBB5750361 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5BC75AA2D08E46C092CBE543 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXBuildFile; fileRef = 51425E3488964E6A812C387C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5BD600E1C576452D8CE9CB1E /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1170C5D43BB942E09EAA85F0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		5EA30E6E057141EBAC60EBE1 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_php.cpp */ = {isa = PBXBuildFile; fileRef = 7F6D27B57F8C4FF69A07C482 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_php.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5FE6D6ACBA904720A720F1AC /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flatc.cpp */ = {isa = PBXBuildFile; fileRef = 4D2AEC65CB4546459D061215 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flatc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		61F3B305565644ED81C657CE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_js.cpp */ = {isa = PBXBuildFile; fileRef = 84D72CBD479746819AA6C985 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_js.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		62A72D9E617E498F843014EE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXBuildFile; fileRef = 8C80ADA0A6BD468382A26DF0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6B1E296E0A2147C2AC05FD1D /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXBuildFile; fileRef = 9E8C4954A7B544978DA05250 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6C6C71D5EF92498ABB08D68E /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_binary.cpp */ = {isa = PBXBuildFile; fileRef = FDA517937FA54CB1883E4724 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_binary.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6D1C9F1B56EE4C2FA2D29C34 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXBuildFile; fileRef = 1FAF4F578DC1419796344827 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6FD20A6675FC4351A19A9260 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXBuildFile; fileRef = 78291FFADACA446393A440F3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */; settings = {COMPILER_FLAGS = ""; }; };
+		710399CB54724DF99FA89B8C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_cpp.cpp */ = {isa = PBXBuildFile; fileRef = 516D1028C53240BFA9495ECB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_cpp.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		730B56CC79EC44128F3C6D2A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXBuildFile; fileRef = CAEFBA2B450A42C4B61B9430 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		74BF42C54EA448AE8C72F079 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flathash.cpp */ = {isa = PBXBuildFile; fileRef = 0D1ED58B27F94F8CB68E64EB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flathash.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		773F4CE438454012896AC4C6 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXBuildFile; fileRef = 825D03CC19CE4D56BEE38A9F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */; settings = {COMPILER_FLAGS = ""; }; };
+		79E8E834C914458487E30ACD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXBuildFile; fileRef = A560F85A04314907ACF05EA3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */; settings = {COMPILER_FLAGS = ""; }; };
+		7FC068FC38D04F119F7C3D21 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */ = {isa = PBXBuildFile; fileRef = DD22D5EB87DC4FC8945974D5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */; settings = {COMPILER_FLAGS = ""; }; };
+		80E8E830672A47ABBAD91671 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXBuildFile; fileRef = E4F9D5D4682943D4BF3C328F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		847619DD14EB4523BA5062D8 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h */ = {isa = PBXBuildFile; fileRef = 35435EBC42A44175B066F435 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h */; settings = {COMPILER_FLAGS = ""; }; };
+		8889B6C832864655BFD7C6FA /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXBuildFile; fileRef = 2B14723CF0904A0DA350D453 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8AA1DA71DA604EB1B92CBC61 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_grpc.cpp */ = {isa = PBXBuildFile; fileRef = 0FDC63F174164B0EA088BECF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_grpc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8B380909233A4418AEA3DC65 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXBuildFile; fileRef = ADD1E7D420BC49209DCCE324 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */; settings = {COMPILER_FLAGS = ""; }; };
+		8D42DAC37B0249CD833A9611 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXBuildFile; fileRef = 2A38DB6BA13C49489FBDDA2C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		931D39A8BF474202A331F7E2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXBuildFile; fileRef = B3F4E83B9D504D6BA3FA901A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		937C1EC5347F4F8A9933888D /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.cc */ = {isa = PBXBuildFile; fileRef = D427002C317D4B249FD4C458 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		97453B6E205C41E19D174C6D /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/schema_interface.h */ = {isa = PBXBuildFile; fileRef = 3337ACEB6ED94E8FA49F1ADE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/schema_interface.h */; settings = {COMPILER_FLAGS = ""; }; };
+		98007FA641114B518CD3EDDE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXBuildFile; fileRef = 8CEC7258B9EF4B279B2B647B /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AD6CB0D52DC249E6B7A6D41B /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXBuildFile; fileRef = 7C2AD5DB90E242839D913EF5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */; settings = {COMPILER_FLAGS = ""; }; };
+		B1BC167433D14D30BAEE9606 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXBuildFile; fileRef = F7DEF036996E488384176030 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */; settings = {COMPILER_FLAGS = ""; }; };
+		B36CFFFD925C43BE82B6E956 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXBuildFile; fileRef = 5C97AD4662B1424399B5F823 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B5E5553DD16440679F58D321 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */ = {isa = PBXBuildFile; fileRef = F8EF4236AB3D46598F737FC7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B6F95131502D4CCAACC34E68 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXBuildFile; fileRef = 9716BB1E16584F8BAC00B871 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BBA04F11FBA74C00A98E5FD4 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXBuildFile; fileRef = 5D0D14F094E44476A6AE9DE7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C9C0C40491CC4728A70E583C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXBuildFile; fileRef = 35572F77480A4E5197A02F8E /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */; settings = {COMPILER_FLAGS = ""; }; };
+		CE00F6C4CEC64F29826A85F0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0BEAF74D408840459076DAE3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		D34A0CE6B8994D60B83F1A78 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXBuildFile; fileRef = CD4DC08EDDD24BBCAABA839D /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D4C25279987C4C6B8AAA8FDD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6C47AE7BBE4648A98A44D10C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		DB4E5882DE014FDD8AB1FD78 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXBuildFile; fileRef = E46FE50859674D53B2F2EF02 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DC4FBA2035D14AB2BD1312E4 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.h */ = {isa = PBXBuildFile; fileRef = 58FE855E10F04A6391A39ED9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.h */; settings = {COMPILER_FLAGS = ""; }; };
+		DF8EB403FCCC4BEA9D575720 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_go.cpp */ = {isa = PBXBuildFile; fileRef = 66A3FAD0D1D249F6B8EBD592 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_go.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E27728931B6C40CCAC2FB47B /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXBuildFile; fileRef = 825A6CE150DF4EA1AD285C59 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */; settings = {COMPILER_FLAGS = ""; }; };
+		E3E5B9A28B814DF087FB2502 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXBuildFile; fileRef = E06611DBC00149DE9D9698B5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */; settings = {COMPILER_FLAGS = ""; }; };
+		E9B31D77E59B48098175AE66 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXBuildFile; fileRef = E0BFAD2169F44A74A64E69F5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */; settings = {COMPILER_FLAGS = ""; }; };
+		E9C9194B9F2B497E94AC3579 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXBuildFile; fileRef = 7DC25EE9B8D4465CA8C96844 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */; settings = {COMPILER_FLAGS = ""; }; };
+		EB150025AD5C4212B4E8B71B /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXBuildFile; fileRef = A95E8B79E0D3476EA1F99AD6 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */; settings = {COMPILER_FLAGS = ""; }; };
+		EB5F0DB9C255436B875A84AB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */ = {isa = PBXBuildFile; fileRef = 1D6DCE1FF584465C9114FC61 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EB95B0B8E8BE4EB68F86B825 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXBuildFile; fileRef = AB441438A59643BDB7FB2B40 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EC056755F64F425588C37684 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXBuildFile; fileRef = 0B4D199F4A754AFEBDB7B038 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */; settings = {COMPILER_FLAGS = ""; }; };
+		EC3C353891F94B29AFD6F02C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXBuildFile; fileRef = ECC786F23208442BBDB04E79 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		ED515538389D4D10B660AF0F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CF46F9F533094B29B92B0D13 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		F0313B7254EE410AA28A4360 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h.rule */ = {isa = PBXBuildFile; fileRef = 4BF3F95E0C0B4030B9C197F3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h.rule */; settings = {COMPILER_FLAGS = ""; }; };
+		F3E4B4B0AE9B487CA6E5E043 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXBuildFile; fileRef = B3DC13B1DCA948899ADEB0F1 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */; settings = {COMPILER_FLAGS = ""; }; };
+		F860E5A0348146C6B2C48649 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_general.cpp */ = {isa = PBXBuildFile; fileRef = 68BA5325A97A4D0AB0AD2FDF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_general.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FB8427DCD810470A9618F577 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXBuildFile; fileRef = DA23FEA36C4B40C6B421DC50 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0313DDE1F5294828B055C3B3 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		0D2B9CE725554750B8B6B448 = {
+			isa = PBXBuildStyle;
+		};
+		63EFA26CA106450E9A7A4D2B /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		753533F901BD4B2991A69019 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		FBB4FED83C1C476E99707F99 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1884370604C247ADB88A3CA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665C09EB1114442E983838F2;
+			remoteInfo = ZERO_CHECK;
+		};
+		491339AF074E428099FDEA94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5212AAEB8F14D17BEF70AD8;
+			remoteInfo = flatc;
+		};
+		598C7F93208442428F564E8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5212AAEB8F14D17BEF70AD8;
+			remoteInfo = flatc;
+		};
+		5DE92BE104194A4EBA1C5875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5212AAEB8F14D17BEF70AD8;
+			remoteInfo = flatc;
+		};
+		5EFBA685A5334760A26BEA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665C09EB1114442E983838F2;
+			remoteInfo = ZERO_CHECK;
+		};
+		65F77AD9A9C8487EA8D0F1F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25EA1DF3BEC445EDA60B3AD4;
+			remoteInfo = flatsamplebinary;
+		};
+		7880CC2DB2414FECA72813F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5212AAEB8F14D17BEF70AD8;
+			remoteInfo = flatc;
+		};
+		7B8BABC3D77F4ECA84928A2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23032807B03F4DFA831E0EB9;
+			remoteInfo = ALL_BUILD;
+		};
+		85E63F2E2F164EB698A180AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665C09EB1114442E983838F2;
+			remoteInfo = ZERO_CHECK;
+		};
+		8CC73C16A80E4ADDB1B6E9BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F58E7DFD034940DFBBC598D0;
+			remoteInfo = flatbuffers;
+		};
+		90CC342BA69144D7B24E8F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D09D30F9BFE247EFA8D3ECEE;
+			remoteInfo = flatsampletext;
+		};
+		9159EB7307C64833949B13A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665C09EB1114442E983838F2;
+			remoteInfo = ZERO_CHECK;
+		};
+		B41B38BC63F94149A3B07F89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665C09EB1114442E983838F2;
+			remoteInfo = ZERO_CHECK;
+		};
+		C1DE74DC4FFC42C882CAC70D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88FF2B111D7489DB98A6E7E;
+			remoteInfo = flathash;
+		};
+		C7574A98A6E54F058374B4B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C97E966751D64C38BD63ED18;
+			remoteInfo = flattests;
+		};
+		CB5E92D597D14E6F84DFD6DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665C09EB1114442E983838F2;
+			remoteInfo = ZERO_CHECK;
+		};
+		CC8B7CAC7C7B4CDDA3593845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04768092B9C94B62AF78305D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665C09EB1114442E983838F2;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0487B4031E04418F8417F816 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test.cpp; path = tests/test.cpp; sourceTree = SOURCE_ROOT; };
+		0B4D199F4A754AFEBDB7B038 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = idl.h; path = include/flatbuffers/idl.h; sourceTree = SOURCE_ROOT; };
+		0BEAF74D408840459076DAE3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0D1ED58B27F94F8CB68E64EB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flathash.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = flathash.cpp; path = src/flathash.cpp; sourceTree = SOURCE_ROOT; };
+		0EDB912BD185424EBA63CDA2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_parser.cpp; path = src/idl_parser.cpp; sourceTree = SOURCE_ROOT; };
+		0EDD2F3BE10C49F584BFC519 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0FDC63F174164B0EA088BECF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_grpc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_grpc.cpp; path = src/idl_gen_grpc.cpp; sourceTree = SOURCE_ROOT; };
+		1170C5D43BB942E09EAA85F0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1ABBEEE72B5041E28E413867 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_python.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_python.cpp; path = src/idl_gen_python.cpp; sourceTree = SOURCE_ROOT; };
+		1AEEC1547BCD46B2BEA0E368 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = code_generators.h; path = include/flatbuffers/code_generators.h; sourceTree = SOURCE_ROOT; };
+		1D6DCE1FF584465C9114FC61 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_fbs.cpp; path = src/idl_gen_fbs.cpp; sourceTree = SOURCE_ROOT; };
+		1FAF4F578DC1419796344827 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash.h; path = include/flatbuffers/hash.h; sourceTree = SOURCE_ROOT; };
+		20785E3167AD4517A50159CF /* flathash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = flathash; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B41B0321034474918F4A26 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2A38B8C409574252B6C4D259 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_text.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sample_text.cpp; path = samples/sample_text.cpp; sourceTree = SOURCE_ROOT; };
+		2A38DB6BA13C49489FBDDA2C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_parser.cpp; path = src/idl_parser.cpp; sourceTree = SOURCE_ROOT; };
+		2B14723CF0904A0DA350D453 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = code_generators.cpp; path = src/code_generators.cpp; sourceTree = SOURCE_ROOT; };
+		2CE4C99848FA4052BEC8E629 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		30AED6A70DD94EB99B8C57EE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection_generated.h; path = include/flatbuffers/reflection_generated.h; sourceTree = SOURCE_ROOT; };
+		32C2D2B1B5204455A57C70DD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		32C4C02A15E2436D825A356C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = flatbuffers.h; path = include/flatbuffers/flatbuffers.h; sourceTree = SOURCE_ROOT; };
+		3337ACEB6ED94E8FA49F1ADE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/schema_interface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = schema_interface.h; path = grpc/src/compiler/schema_interface.h; sourceTree = SOURCE_ROOT; };
+		35435EBC42A44175B066F435 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = monster_test_generated.h; path = tests/monster_test_generated.h; sourceTree = SOURCE_ROOT; };
+		35572F77480A4E5197A02F8E /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = flatbuffers.h; path = include/flatbuffers/flatbuffers.h; sourceTree = SOURCE_ROOT; };
+		3F0635512F2749CBB194338A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = code_generators.h; path = include/flatbuffers/code_generators.h; sourceTree = SOURCE_ROOT; };
+		475B2895050146D9AF101178 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash.h; path = include/flatbuffers/hash.h; sourceTree = SOURCE_ROOT; };
+		4BF3F95E0C0B4030B9C197F3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = monster_test_generated.h.rule; path = tests/monster_test_generated.h.rule; sourceTree = SOURCE_ROOT; };
+		4D2AEC65CB4546459D061215 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flatc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = flatc.cpp; path = src/flatc.cpp; sourceTree = SOURCE_ROOT; };
+		51425E3488964E6A812C387C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = util.cpp; path = src/util.cpp; sourceTree = SOURCE_ROOT; };
+		516D1028C53240BFA9495ECB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_cpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_cpp.cpp; path = src/idl_gen_cpp.cpp; sourceTree = SOURCE_ROOT; };
+		58FE855E10F04A6391A39ED9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cpp_generator.h; path = grpc/src/compiler/cpp_generator.h; sourceTree = SOURCE_ROOT; };
+		5B3488B38F304DCBB142E2EF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection.h; path = include/flatbuffers/reflection.h; sourceTree = SOURCE_ROOT; };
+		5C97AD4662B1424399B5F823 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = code_generators.cpp; path = src/code_generators.cpp; sourceTree = SOURCE_ROOT; };
+		5D0D14F094E44476A6AE9DE7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_text.cpp; path = src/idl_gen_text.cpp; sourceTree = SOURCE_ROOT; };
+		66A3FAD0D1D249F6B8EBD592 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_go.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_go.cpp; path = src/idl_gen_go.cpp; sourceTree = SOURCE_ROOT; };
+		66D2997582104C38B2E47A4B /* flatsamplebinary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = flatsamplebinary; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BA5325A97A4D0AB0AD2FDF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_general.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_general.cpp; path = src/idl_gen_general.cpp; sourceTree = SOURCE_ROOT; };
+		6C47AE7BBE4648A98A44D10C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		72AB6FC2B41845FE8104EBB9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = code_generators.h; path = include/flatbuffers/code_generators.h; sourceTree = SOURCE_ROOT; };
+		78291FFADACA446393A440F3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash.h; path = include/flatbuffers/hash.h; sourceTree = SOURCE_ROOT; };
+		7A2DBFCE5CAB4181AA065A09 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_parser.cpp; path = src/idl_parser.cpp; sourceTree = SOURCE_ROOT; };
+		7C2AD5DB90E242839D913EF5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = flatbuffers.h; path = include/flatbuffers/flatbuffers.h; sourceTree = SOURCE_ROOT; };
+		7DC25EE9B8D4465CA8C96844 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = flatbuffers.h; path = include/flatbuffers/flatbuffers.h; sourceTree = SOURCE_ROOT; };
+		7F6D27B57F8C4FF69A07C482 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_php.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_php.cpp; path = src/idl_gen_php.cpp; sourceTree = SOURCE_ROOT; };
+		825A6CE150DF4EA1AD285C59 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = code_generators.h; path = include/flatbuffers/code_generators.h; sourceTree = SOURCE_ROOT; };
+		825D03CC19CE4D56BEE38A9F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = util.h; path = include/flatbuffers/util.h; sourceTree = SOURCE_ROOT; };
+		84D72CBD479746819AA6C985 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_js.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_js.cpp; path = src/idl_gen_js.cpp; sourceTree = SOURCE_ROOT; };
+		85644ABC7C3B452A930963EC /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = util.cpp; path = src/util.cpp; sourceTree = SOURCE_ROOT; };
+		8904ACB0CD674BE489CDBE9C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = go_generator.cc; path = grpc/src/compiler/go_generator.cc; sourceTree = SOURCE_ROOT; };
+		8A223774547C4F5883012D21 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = util.h; path = include/flatbuffers/util.h; sourceTree = SOURCE_ROOT; };
+		8A5166CD80404DBA86EAD52A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = idl.h; path = include/flatbuffers/idl.h; sourceTree = SOURCE_ROOT; };
+		8C80ADA0A6BD468382A26DF0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reflection.cpp; path = src/reflection.cpp; sourceTree = SOURCE_ROOT; };
+		8CEC7258B9EF4B279B2B647B /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_parser.cpp; path = src/idl_parser.cpp; sourceTree = SOURCE_ROOT; };
+		92BBA20A13094F1EB7DFEC6A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = monster_generated.h.rule; path = samples/monster_generated.h.rule; sourceTree = SOURCE_ROOT; };
+		951A4B50616A46F0AE200217 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reflection.cpp; path = src/reflection.cpp; sourceTree = SOURCE_ROOT; };
+		9716BB1E16584F8BAC00B871 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_text.cpp; path = src/idl_gen_text.cpp; sourceTree = SOURCE_ROOT; };
+		9E8C4954A7B544978DA05250 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = flatbuffers.h; path = include/flatbuffers/flatbuffers.h; sourceTree = SOURCE_ROOT; };
+		A560F85A04314907ACF05EA3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = util.h; path = include/flatbuffers/util.h; sourceTree = SOURCE_ROOT; };
+		A95E8B79E0D3476EA1F99AD6 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection.h; path = include/flatbuffers/reflection.h; sourceTree = SOURCE_ROOT; };
+		AA0AC69D8FAB4CD392B26F6C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = util.h; path = include/flatbuffers/util.h; sourceTree = SOURCE_ROOT; };
+		AB441438A59643BDB7FB2B40 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = util.cpp; path = src/util.cpp; sourceTree = SOURCE_ROOT; };
+		ADD1E7D420BC49209DCCE324 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection_generated.h; path = include/flatbuffers/reflection_generated.h; sourceTree = SOURCE_ROOT; };
+		B3DC13B1DCA948899ADEB0F1 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash.h; path = include/flatbuffers/hash.h; sourceTree = SOURCE_ROOT; };
+		B3F4E83B9D504D6BA3FA901A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = util.cpp; path = src/util.cpp; sourceTree = SOURCE_ROOT; };
+		B423FCB09AEB4746844C74AD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = monster_generated.h.rule; path = samples/monster_generated.h.rule; sourceTree = SOURCE_ROOT; };
+		BE6993E8CC534732A86FEDE2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = go_generator.h; path = grpc/src/compiler/go_generator.h; sourceTree = SOURCE_ROOT; };
+		BF8FC575BB3B465BBCC5FF28 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = hash.h; path = include/flatbuffers/hash.h; sourceTree = SOURCE_ROOT; };
+		C562AD6724C34F25A2AA7C2E /* flatsampletext */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = flatsampletext; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAEFBA2B450A42C4B61B9430 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = code_generators.cpp; path = src/code_generators.cpp; sourceTree = SOURCE_ROOT; };
+		CD4DC08EDDD24BBCAABA839D /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_text.cpp; path = src/idl_gen_text.cpp; sourceTree = SOURCE_ROOT; };
+		CF46F9F533094B29B92B0D13 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D427002C317D4B249FD4C458 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cpp_generator.cc; path = grpc/src/compiler/cpp_generator.cc; sourceTree = SOURCE_ROOT; };
+		D6746680382143EBB5750361 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = code_generators.cpp; path = src/code_generators.cpp; sourceTree = SOURCE_ROOT; };
+		DA23FEA36C4B40C6B421DC50 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection_generated.h; path = include/flatbuffers/reflection_generated.h; sourceTree = SOURCE_ROOT; };
+		DB23D2EBD5C44B018D5A58D8 /* flatbuffers */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libflatbuffers.a; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC03983255894FD1B24A09E2 /* flatc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = flatc; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD22D5EB87DC4FC8945974D5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = monster_generated.h; path = samples/monster_generated.h; sourceTree = SOURCE_ROOT; };
+		E06611DBC00149DE9D9698B5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection.h; path = include/flatbuffers/reflection.h; sourceTree = SOURCE_ROOT; };
+		E0BFAD2169F44A74A64E69F5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = idl.h; path = include/flatbuffers/idl.h; sourceTree = SOURCE_ROOT; };
+		E46FE50859674D53B2F2EF02 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_text.cpp; path = src/idl_gen_text.cpp; sourceTree = SOURCE_ROOT; };
+		E4EB7FB914114E29850730C5 /* flattests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = flattests; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F9D5D4682943D4BF3C328F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reflection.cpp; path = src/reflection.cpp; sourceTree = SOURCE_ROOT; };
+		E5F65ECEA9F348AC81ACF83A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = monster_generated.h; path = samples/monster_generated.h; sourceTree = SOURCE_ROOT; };
+		ECC786F23208442BBDB04E79 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reflection.cpp; path = src/reflection.cpp; sourceTree = SOURCE_ROOT; };
+		F477A6F2E2A54F209F3B62D9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection.h; path = include/flatbuffers/reflection.h; sourceTree = SOURCE_ROOT; };
+		F73CA94A80084F5EA441EE50 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = idl.h; path = include/flatbuffers/idl.h; sourceTree = SOURCE_ROOT; };
+		F7DEF036996E488384176030 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = reflection_generated.h; path = include/flatbuffers/reflection_generated.h; sourceTree = SOURCE_ROOT; };
+		F8EF4236AB3D46598F737FC7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = idl_gen_fbs.cpp; path = src/idl_gen_fbs.cpp; sourceTree = SOURCE_ROOT; };
+		FDA517937FA54CB1883E4724 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_binary.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sample_binary.cpp; path = samples/sample_binary.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		086BBCED1D7B431BA8054B0E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				B423FCB09AEB4746844C74AD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		27FA5883EAE149F2BBD4CB1D /* flatbuffers */ = {
+			isa = PBXGroup;
+			children = (
+				D4E755F6E544400CADFB6E72 /* Header Files */,
+				7947A2F774194D569A20021C /* Source Files */,
+				CF46F9F533094B29B92B0D13 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = flatbuffers;
+			sourceTree = "<group>";
+		};
+		370D1428ACA24CFCBD661FFA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A38B8C409574252B6C4D259 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_text.cpp */,
+				D6746680382143EBB5750361 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				9716BB1E16584F8BAC00B871 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				8CEC7258B9EF4B279B2B647B /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				951A4B50616A46F0AE200217 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				B3F4E83B9D504D6BA3FA901A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3DE6B83B5AFD4D3C99F6E40D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3F69F57525B64E27BE5EB1BB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F0635512F2749CBB194338A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */,
+				7C2AD5DB90E242839D913EF5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */,
+				BF8FC575BB3B465BBCC5FF28 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */,
+				E0BFAD2169F44A74A64E69F5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */,
+				A95E8B79E0D3476EA1F99AD6 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */,
+				F7DEF036996E488384176030 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */,
+				A560F85A04314907ACF05EA3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */,
+				E5F65ECEA9F348AC81ACF83A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		46884F9E2A3A4B0281FAFAD3 /* flathash */ = {
+			isa = PBXGroup;
+			children = (
+				9798F0259DBD45BE951DBACD /* Header Files */,
+				DAF6DD4B9E8F480CAA30D45F /* Source Files */,
+				32C2D2B1B5204455A57C70DD /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = flathash;
+			sourceTree = "<group>";
+		};
+		4799663F7B404168A62B507C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				58FE855E10F04A6391A39ED9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.h */,
+				BE6993E8CC534732A86FEDE2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.h */,
+				3337ACEB6ED94E8FA49F1ADE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/schema_interface.h */,
+				72AB6FC2B41845FE8104EBB9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */,
+				35572F77480A4E5197A02F8E /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */,
+				78291FFADACA446393A440F3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */,
+				0B4D199F4A754AFEBDB7B038 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */,
+				F477A6F2E2A54F209F3B62D9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */,
+				DA23FEA36C4B40C6B421DC50 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */,
+				AA0AC69D8FAB4CD392B26F6C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4B97074AA0D94DBE8B024787 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				825A6CE150DF4EA1AD285C59 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */,
+				32C4C02A15E2436D825A356C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */,
+				B3DC13B1DCA948899ADEB0F1 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */,
+				8A5166CD80404DBA86EAD52A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */,
+				5B3488B38F304DCBB142E2EF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */,
+				ADD1E7D420BC49209DCCE324 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */,
+				8A223774547C4F5883012D21 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */,
+				35435EBC42A44175B066F435 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4E23EB591D664D6BBEC72D34 /* flatsampletext */ = {
+			isa = PBXGroup;
+			children = (
+				3F69F57525B64E27BE5EB1BB /* Header Files */,
+				370D1428ACA24CFCBD661FFA /* Source Files */,
+				5A0BE14FE66F432CBA48D5A9 /* CMake Rules */,
+				6C47AE7BBE4648A98A44D10C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = flatsampletext;
+			sourceTree = "<group>";
+		};
+		563E70EF360145E2ACF6EA61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB23D2EBD5C44B018D5A58D8 /* flatbuffers */,
+				DC03983255894FD1B24A09E2 /* flatc */,
+				20785E3167AD4517A50159CF /* flathash */,
+				66D2997582104C38B2E47A4B /* flatsamplebinary */,
+				C562AD6724C34F25A2AA7C2E /* flatsampletext */,
+				E4EB7FB914114E29850730C5 /* flattests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DDBE98298641AE9F3E8A8F /* flatsamplebinary */ = {
+			isa = PBXGroup;
+			children = (
+				FD914B6522AD4566B8DBA5B3 /* Header Files */,
+				85B9A4F4BDA14E05A2BB45B9 /* Source Files */,
+				086BBCED1D7B431BA8054B0E /* CMake Rules */,
+				0BEAF74D408840459076DAE3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = flatsamplebinary;
+			sourceTree = "<group>";
+		};
+		5A0BE14FE66F432CBA48D5A9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				92BBA20A13094F1EB7DFEC6A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7733B2FB110F48858896B470 /* flattests */ = {
+			isa = PBXGroup;
+			children = (
+				4B97074AA0D94DBE8B024787 /* Header Files */,
+				AFA8CCC4EAA54A6BB3A16159 /* Source Files */,
+				D6133F20282545D184E419E0 /* CMake Rules */,
+				1170C5D43BB942E09EAA85F0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = flattests;
+			sourceTree = "<group>";
+		};
+		7947A2F774194D569A20021C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B14723CF0904A0DA350D453 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				E46FE50859674D53B2F2EF02 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				7A2DBFCE5CAB4181AA065A09 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				E4F9D5D4682943D4BF3C328F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				51425E3488964E6A812C387C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		85B9A4F4BDA14E05A2BB45B9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDA517937FA54CB1883E4724 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_binary.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8C6295553F4346C8917B242D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8D6B222B3D054A06B2713813 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				46884F9E2A3A4B0281FAFAD3 /* flathash */,
+				4E23EB591D664D6BBEC72D34 /* flatsampletext */,
+				59DDBE98298641AE9F3E8A8F /* flatsamplebinary */,
+				C103D2B20EAA4C6782FE4578 /* flatc */,
+				7733B2FB110F48858896B470 /* flattests */,
+				27FA5883EAE149F2BBD4CB1D /* flatbuffers */,
+				AFB0AADE8F3D4AA4988CF0A3 /* ALL_BUILD */,
+				91B37584F488490C8B598A3E /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		91B37584F488490C8B598A3E /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				8C6295553F4346C8917B242D /* CMake Rules */,
+				0EDD2F3BE10C49F584BFC519 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		9798F0259DBD45BE951DBACD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				475B2895050146D9AF101178 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A4DFC18D877543FBA1067C8F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D427002C317D4B249FD4C458 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.cc */,
+				8904ACB0CD674BE489CDBE9C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.cc */,
+				5C97AD4662B1424399B5F823 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				4D2AEC65CB4546459D061215 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flatc.cpp */,
+				516D1028C53240BFA9495ECB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_cpp.cpp */,
+				1D6DCE1FF584465C9114FC61 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */,
+				68BA5325A97A4D0AB0AD2FDF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_general.cpp */,
+				66A3FAD0D1D249F6B8EBD592 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_go.cpp */,
+				0FDC63F174164B0EA088BECF /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_grpc.cpp */,
+				84D72CBD479746819AA6C985 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_js.cpp */,
+				7F6D27B57F8C4FF69A07C482 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_php.cpp */,
+				1ABBEEE72B5041E28E413867 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_python.cpp */,
+				5D0D14F094E44476A6AE9DE7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				0EDB912BD185424EBA63CDA2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				ECC786F23208442BBDB04E79 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				AB441438A59643BDB7FB2B40 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AFA8CCC4EAA54A6BB3A16159 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAEFBA2B450A42C4B61B9430 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				F8EF4236AB3D46598F737FC7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */,
+				CD4DC08EDDD24BBCAABA839D /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				2A38DB6BA13C49489FBDDA2C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				8C80ADA0A6BD468382A26DF0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				85644ABC7C3B452A930963EC /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+				0487B4031E04418F8417F816 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AFB0AADE8F3D4AA4988CF0A3 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				F693F1387E6C4C4A8C1821F3 /* CMake Rules */,
+				21B41B0321034474918F4A26 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BC2F7B2303844C5395659D61 = {
+			isa = PBXGroup;
+			children = (
+				8D6B222B3D054A06B2713813 /* Sources */,
+				3DE6B83B5AFD4D3C99F6E40D /* Resources */,
+				563E70EF360145E2ACF6EA61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C103D2B20EAA4C6782FE4578 /* flatc */ = {
+			isa = PBXGroup;
+			children = (
+				4799663F7B404168A62B507C /* Header Files */,
+				A4DFC18D877543FBA1067C8F /* Source Files */,
+				2CE4C99848FA4052BEC8E629 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeLists.txt */,
+			);
+			name = flatc;
+			sourceTree = "<group>";
+		};
+		D4E755F6E544400CADFB6E72 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AEEC1547BCD46B2BEA0E368 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/code_generators.h */,
+				9E8C4954A7B544978DA05250 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */,
+				1FAF4F578DC1419796344827 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/hash.h */,
+				F73CA94A80084F5EA441EE50 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/idl.h */,
+				E06611DBC00149DE9D9698B5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection.h */,
+				30AED6A70DD94EB99B8C57EE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/reflection_generated.h */,
+				825D03CC19CE4D56BEE38A9F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/util.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		D6133F20282545D184E419E0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				4BF3F95E0C0B4030B9C197F3 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/monster_test_generated.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DAF6DD4B9E8F480CAA30D45F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ED58B27F94F8CB68E64EB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flathash.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F693F1387E6C4C4A8C1821F3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		FD914B6522AD4566B8DBA5B3 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DC25EE9B8D4465CA8C96844 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include/flatbuffers/flatbuffers.h */,
+				DD22D5EB87DC4FC8945974D5 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/monster_generated.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25EA1DF3BEC445EDA60B3AD4 /* flatsamplebinary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1004CB1F790A4A69941B286D /* Build configuration list for PBXNativeTarget "flatsamplebinary" */;
+			buildPhases = (
+				88EAB4F643074B2C97B26A7E /* CMake Rules */,
+				BA94B71C6F1F40EB8E6958CF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A7F8185838A412D8AEA4178 /* PBXTargetDependency */,
+				87C8852472614237B9A559F8 /* PBXTargetDependency */,
+			);
+			name = flatsamplebinary;
+			productName = flatsamplebinary;
+			productReference = 66D2997582104C38B2E47A4B /* flatsamplebinary */;
+			productType = "com.apple.product-type.tool";
+		};
+		A5212AAEB8F14D17BEF70AD8 /* flatc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED09A7E4D994C28A88C8FB5 /* Build configuration list for PBXNativeTarget "flatc" */;
+			buildPhases = (
+				802A5FAE1524460C9BE92D0B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29C39B513254462299C9E6F7 /* PBXTargetDependency */,
+			);
+			name = flatc;
+			productName = flatc;
+			productReference = DC03983255894FD1B24A09E2 /* flatc */;
+			productType = "com.apple.product-type.tool";
+		};
+		C88FF2B111D7489DB98A6E7E /* flathash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67601A1CC67E4611B45CA6C0 /* Build configuration list for PBXNativeTarget "flathash" */;
+			buildPhases = (
+				D5E85C7B79924C5296F44081 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000A6FAC7ED9498CB665F2C1 /* PBXTargetDependency */,
+			);
+			name = flathash;
+			productName = flathash;
+			productReference = 20785E3167AD4517A50159CF /* flathash */;
+			productType = "com.apple.product-type.tool";
+		};
+		C97E966751D64C38BD63ED18 /* flattests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770F0F5E5F1A4100A13AD030 /* Build configuration list for PBXNativeTarget "flattests" */;
+			buildPhases = (
+				2E1EB2B5B90240F9B9A862F3 /* CMake Rules */,
+				606BAAB34F814B75A6488304 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53D1B4A2280D404AA9F98365 /* PBXTargetDependency */,
+				B5800B620BB14717A1840502 /* PBXTargetDependency */,
+			);
+			name = flattests;
+			productName = flattests;
+			productReference = E4EB7FB914114E29850730C5 /* flattests */;
+			productType = "com.apple.product-type.tool";
+		};
+		D09D30F9BFE247EFA8D3ECEE /* flatsampletext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796AE3BBE15D49EA9EC6BBA6 /* Build configuration list for PBXNativeTarget "flatsampletext" */;
+			buildPhases = (
+				6C10E91FE6584B4E9CE77EB4 /* CMake Rules */,
+				8D780D67B7764407908C8765 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				237356B5372E4BF9AD18182C /* PBXTargetDependency */,
+				019B409EC13F404E9C7558D9 /* PBXTargetDependency */,
+			);
+			name = flatsampletext;
+			productName = flatsampletext;
+			productReference = C562AD6724C34F25A2AA7C2E /* flatsampletext */;
+			productType = "com.apple.product-type.tool";
+		};
+		F58E7DFD034940DFBBC598D0 /* flatbuffers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC09D685C294AA7BE7EDA2C /* Build configuration list for PBXNativeTarget "flatbuffers" */;
+			buildPhases = (
+				1B6297AE64634117AD3853AE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D6107E392AE465E9F1030D8 /* PBXTargetDependency */,
+			);
+			name = flatbuffers;
+			productName = flatbuffers;
+			productReference = DB23D2EBD5C44B018D5A58D8 /* flatbuffers */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04768092B9C94B62AF78305D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = B16BD08579AA4A05BFD72362 /* Build configuration list for PBXProject "FlatBuffers" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				753533F901BD4B2991A69019 /* Debug */,
+				63EFA26CA106450E9A7A4D2B /* Release */,
+				0313DDE1F5294828B055C3B3 /* MinSizeRel */,
+				FBB4FED83C1C476E99707F99 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = BC2F7B2303844C5395659D61;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				23032807B03F4DFA831E0EB9 /* ALL_BUILD */,
+				DD7B02181B29446DA6AD9D11 /* RUN_TESTS */,
+				665C09EB1114442E983838F2 /* ZERO_CHECK */,
+				F58E7DFD034940DFBBC598D0 /* flatbuffers */,
+				A5212AAEB8F14D17BEF70AD8 /* flatc */,
+				C88FF2B111D7489DB98A6E7E /* flathash */,
+				25EA1DF3BEC445EDA60B3AD4 /* flatsamplebinary */,
+				D09D30F9BFE247EFA8D3ECEE /* flatsampletext */,
+				C97E966751D64C38BD63ED18 /* flattests */,
+				44079989DCB24F60812BFEB6 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C030680A20943C5A29E0F66 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		2E1EB2B5B90240F9B9A862F3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers -f /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeScripts/flattests_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		496F1990449B4B9A82AC4AF5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6C10E91FE6584B4E9CE77EB4 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers -f /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeScripts/flatsampletext_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		88EAB4F643074B2C97B26A7E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers -f /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeScripts/flatsamplebinary_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8E9011ABA3BA47BA81FCD7E9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		90B868EABDBA42C2B369FB5E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers -f /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E7A9C84480CC4A7C9A026D27 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers -f /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EC93BE05BD4642E5979BCEA5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F518A2A0A0734EFC8E77CEB2 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers -f /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F9EF15EA2C4A4A3299306A2A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers -f /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B6297AE64634117AD3853AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8889B6C832864655BFD7C6FA /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				DB4E5882DE014FDD8AB1FD78 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				2C076488A16F428783C1E621 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				80E8E830672A47ABBAD91671 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				5BC75AA2D08E46C092CBE543 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		606BAAB34F814B75A6488304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730B56CC79EC44128F3C6D2A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				B5E5553DD16440679F58D321 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */,
+				D34A0CE6B8994D60B83F1A78 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				8D42DAC37B0249CD833A9611 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				62A72D9E617E498F843014EE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				21F40003036D4291ACCE56C9 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+				201A4A10442A4BE0A7B637FA /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests/test.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		802A5FAE1524460C9BE92D0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937C1EC5347F4F8A9933888D /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/cpp_generator.cc */,
+				1A951D803205455095A8145F /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc/src/compiler/go_generator.cc */,
+				B36CFFFD925C43BE82B6E956 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				5FE6D6ACBA904720A720F1AC /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flatc.cpp */,
+				710399CB54724DF99FA89B8C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_cpp.cpp */,
+				EB5F0DB9C255436B875A84AB /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_fbs.cpp */,
+				F860E5A0348146C6B2C48649 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_general.cpp */,
+				DF8EB403FCCC4BEA9D575720 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_go.cpp */,
+				8AA1DA71DA604EB1B92CBC61 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_grpc.cpp */,
+				61F3B305565644ED81C657CE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_js.cpp */,
+				5EA30E6E057141EBAC60EBE1 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_php.cpp */,
+				4AC87F4A6F304D3D8E9533B0 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_python.cpp */,
+				BBA04F11FBA74C00A98E5FD4 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				028500F0700D4D25929E7B60 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				EC3C353891F94B29AFD6F02C /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				EB95B0B8E8BE4EB68F86B825 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D780D67B7764407908C8765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5AA58F6F3E4478BDC7726A /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_text.cpp */,
+				58D53DC55349407ABC2CA903 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/code_generators.cpp */,
+				B6F95131502D4CCAACC34E68 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_gen_text.cpp */,
+				98007FA641114B518CD3EDDE /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/idl_parser.cpp */,
+				4C92F03650F94FCAB2D478F7 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/reflection.cpp */,
+				931D39A8BF474202A331F7E2 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/util.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA94B71C6F1F40EB8E6958CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6C71D5EF92498ABB08D68E /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples/sample_binary.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E85C7B79924C5296F44081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74BF42C54EA448AE8C72F079 /* /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/src/flathash.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000A6FAC7ED9498CB665F2C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665C09EB1114442E983838F2 /* ZERO_CHECK */;
+			targetProxy = CC8B7CAC7C7B4CDDA3593845 /* PBXContainerItemProxy */;
+		};
+		019B409EC13F404E9C7558D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665C09EB1114442E983838F2 /* ZERO_CHECK */;
+			targetProxy = 5EFBA685A5334760A26BEA0D /* PBXContainerItemProxy */;
+		};
+		0573525CD08040A3B6890E2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665C09EB1114442E983838F2 /* ZERO_CHECK */;
+			targetProxy = 9159EB7307C64833949B13A6 /* PBXContainerItemProxy */;
+		};
+		09939B29239A49E7A8CAAD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C97E966751D64C38BD63ED18 /* flattests */;
+			targetProxy = C7574A98A6E54F058374B4B4 /* PBXContainerItemProxy */;
+		};
+		1D6107E392AE465E9F1030D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665C09EB1114442E983838F2 /* ZERO_CHECK */;
+			targetProxy = B41B38BC63F94149A3B07F89 /* PBXContainerItemProxy */;
+		};
+		237356B5372E4BF9AD18182C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5212AAEB8F14D17BEF70AD8 /* flatc */;
+			targetProxy = 5DE92BE104194A4EBA1C5875 /* PBXContainerItemProxy */;
+		};
+		29C39B513254462299C9E6F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665C09EB1114442E983838F2 /* ZERO_CHECK */;
+			targetProxy = 85E63F2E2F164EB698A180AC /* PBXContainerItemProxy */;
+		};
+		3A7F8185838A412D8AEA4178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5212AAEB8F14D17BEF70AD8 /* flatc */;
+			targetProxy = 491339AF074E428099FDEA94 /* PBXContainerItemProxy */;
+		};
+		53D1B4A2280D404AA9F98365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5212AAEB8F14D17BEF70AD8 /* flatc */;
+			targetProxy = 598C7F93208442428F564E8F /* PBXContainerItemProxy */;
+		};
+		676CCC2B06CD48C2A3DE08B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C88FF2B111D7489DB98A6E7E /* flathash */;
+			targetProxy = C1DE74DC4FFC42C882CAC70D /* PBXContainerItemProxy */;
+		};
+		74415CC140F14FFEA1A2FCAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F58E7DFD034940DFBBC598D0 /* flatbuffers */;
+			targetProxy = 8CC73C16A80E4ADDB1B6E9BF /* PBXContainerItemProxy */;
+		};
+		87C8852472614237B9A559F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665C09EB1114442E983838F2 /* ZERO_CHECK */;
+			targetProxy = CB5E92D597D14E6F84DFD6DD /* PBXContainerItemProxy */;
+		};
+		89B9B4D060EC42D99B087CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D09D30F9BFE247EFA8D3ECEE /* flatsampletext */;
+			targetProxy = 90CC342BA69144D7B24E8F68 /* PBXContainerItemProxy */;
+		};
+		A00EF0F9E30E4461959B9BA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23032807B03F4DFA831E0EB9 /* ALL_BUILD */;
+			targetProxy = 7B8BABC3D77F4ECA84928A2D /* PBXContainerItemProxy */;
+		};
+		B5800B620BB14717A1840502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665C09EB1114442E983838F2 /* ZERO_CHECK */;
+			targetProxy = 1884370604C247ADB88A3CA7 /* PBXContainerItemProxy */;
+		};
+		EE3C2B18C3FA460F9A93523F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5212AAEB8F14D17BEF70AD8 /* flatc */;
+			targetProxy = 7880CC2DB2414FECA72813F3 /* PBXContainerItemProxy */;
+		};
+		F5DCE87009E44D0A8EECFA77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25EA1DF3BEC445EDA60B3AD4 /* flatsamplebinary */;
+			targetProxy = 65F77AD9A9C8487EA8D0F1F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04DFE806A9334F4190D66DAC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", FLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE, "'FLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flattests;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		05B1FD3263284EBEA379C0D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsamplebinary;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		05EEF31BFBCC4DA9BA6080C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsampletext;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		092B76270C2E453C893D4E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		0E1A837C77A64808AE2F3748 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		1B881FE19F4445C1A50945D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/build;
+			};
+			name = Release;
+		};
+		21B75559252B49419AFEC3FD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsampletext;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		229973CF30004315B2276DA8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		3169F658770C4E6B94BE9136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", FLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE, "'FLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flattests;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		435D2860D1D24392873FB27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flathash;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		4747EF4C92924878B7EEA04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		47B056764D7C4D488D0EDF57 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		53B1B4D443AC4549B26F5263 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatbuffers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		60E4F105320345C8B81DC628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		6606598568904608AAB3F3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		662995566522466E92C438AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", FLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE, "'FLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flattests;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		6C204ACCF280461FBCABE038 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		6C246CF571F5469490DB3421 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatbuffers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		763B054FE037438FBD5EA5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatbuffers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		7CC2D49D486D4D7198965803 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsamplebinary;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		7D18432B7A6C4A22BD6667DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		8790F6A54DAC428B9FF80D5F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		8C285A4F712C434281FCE8E7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/build;
+			};
+			name = MinSizeRel;
+		};
+		9014E46BEE6244B9BF7B721A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		936F833ECE94447797CD236A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		9F41F7FECE334AA5BC6EA955 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/build;
+			};
+			name = Debug;
+		};
+		A75E41FEB1B34B289F8D84E7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		ABDFB10A136F4C51ABFBA0CD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flathash;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		ACEBE6A75A8247F3BB25CD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsampletext;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		B711088F8944406C8F3087AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flathash;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		B95C17D52C2E430392AC6AD8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsampletext;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		BCEC5583FAD0429BB7DFADE7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		C1F62365637F42C2B809F2CE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		C395E481E74A4A2DA377ED4B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", FLATBUFFERS_TRACK_VERIFIER_BUFFER_SIZE, "'FLATBUFFERS_DEBUG_VERIFICATION_FAILURE=1'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flattests;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		C66DC36B26E74C49B9B5B6EF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		C8A98A133AEF4A429587CA21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		C9E57532B34341748F862F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		CC3C1ECB8F5C42059FCECD9D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsamplebinary;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		D5AD6A83E1BB429FA02AAEC1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra        -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flathash;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		DD18FCB329084A0D82F24F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatbuffers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		E3C9263678674342B9076951 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		EEF7C30FA61149DFB151ED4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11 -stdlib=libc++ -Wall -pedantic -Werror -Wextra     -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = flatsamplebinary;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		F8F55D435C284AD5BD840401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/include, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/grpc, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/tests, /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/samples, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		FE3C3A867FA3422F8C8C3269 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/veasna/Documents/MyProject/Web/Cmidt.com/flatbuffers/build;
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02B27640A30441048C4A319B /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4747EF4C92924878B7EEA04D /* Debug */,
+				092B76270C2E453C893D4E18 /* Release */,
+				0E1A837C77A64808AE2F3748 /* MinSizeRel */,
+				8790F6A54DAC428B9FF80D5F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1004CB1F790A4A69941B286D /* Build configuration list for PBXNativeTarget "flatsamplebinary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B1FD3263284EBEA379C0D4 /* Debug */,
+				EEF7C30FA61149DFB151ED4E /* Release */,
+				CC3C1ECB8F5C42059FCECD9D /* MinSizeRel */,
+				7CC2D49D486D4D7198965803 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4BC09D685C294AA7BE7EDA2C /* Build configuration list for PBXNativeTarget "flatbuffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD18FCB329084A0D82F24F09 /* Debug */,
+				763B054FE037438FBD5EA5A7 /* Release */,
+				53B1B4D443AC4549B26F5263 /* MinSizeRel */,
+				6C246CF571F5469490DB3421 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4ED09A7E4D994C28A88C8FB5 /* Build configuration list for PBXNativeTarget "flatc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E57532B34341748F862F58 /* Debug */,
+				6606598568904608AAB3F3B6 /* Release */,
+				C66DC36B26E74C49B9B5B6EF /* MinSizeRel */,
+				BCEC5583FAD0429BB7DFADE7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		67601A1CC67E4611B45CA6C0 /* Build configuration list for PBXNativeTarget "flathash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435D2860D1D24392873FB27F /* Debug */,
+				B711088F8944406C8F3087AA /* Release */,
+				ABDFB10A136F4C51ABFBA0CD /* MinSizeRel */,
+				D5AD6A83E1BB429FA02AAEC1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		770F0F5E5F1A4100A13AD030 /* Build configuration list for PBXNativeTarget "flattests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				662995566522466E92C438AF /* Debug */,
+				3169F658770C4E6B94BE9136 /* Release */,
+				04DFE806A9334F4190D66DAC /* MinSizeRel */,
+				C395E481E74A4A2DA377ED4B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		796AE3BBE15D49EA9EC6BBA6 /* Build configuration list for PBXNativeTarget "flatsampletext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEBE6A75A8247F3BB25CD78 /* Debug */,
+				05EEF31BFBCC4DA9BA6080C5 /* Release */,
+				21B75559252B49419AFEC3FD /* MinSizeRel */,
+				B95C17D52C2E430392AC6AD8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8CED81094D8844B4BE0EA70F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8A98A133AEF4A429587CA21 /* Debug */,
+				936F833ECE94447797CD236A /* Release */,
+				C1F62365637F42C2B809F2CE /* MinSizeRel */,
+				229973CF30004315B2276DA8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A860A660A95E4902B43B5FA0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8F55D435C284AD5BD840401 /* Debug */,
+				7D18432B7A6C4A22BD6667DB /* Release */,
+				E3C9263678674342B9076951 /* MinSizeRel */,
+				47B056764D7C4D488D0EDF57 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B16BD08579AA4A05BFD72362 /* Build configuration list for PBXProject "FlatBuffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F41F7FECE334AA5BC6EA955 /* Debug */,
+				1B881FE19F4445C1A50945D0 /* Release */,
+				8C285A4F712C434281FCE8E7 /* MinSizeRel */,
+				FE3C3A867FA3422F8C8C3269 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C8DFEBECFB744F95BDDC0640 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9014E46BEE6244B9BF7B721A /* Debug */,
+				60E4F105320345C8B81DC628 /* Release */,
+				A75E41FEB1B34B289F8D84E7 /* MinSizeRel */,
+				6C204ACCF280461FBCABE038 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04768092B9C94B62AF78305D /* Project object */;
+}
