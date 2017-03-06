@@ -116,8 +116,12 @@ To test Flatbuffer, open Xcode project, Set the active schema to "FlatbufferUnit
 ## Unsupported Feature
 
 - Namespace
+
 Namespace will not be supported by Swift as Swift does not support multiple namespace in the a module or project.
+
 - Relection (&Resizing)
+
 This feature is support in C++.
+
 - JSON Parser
 Currently not implemented.
