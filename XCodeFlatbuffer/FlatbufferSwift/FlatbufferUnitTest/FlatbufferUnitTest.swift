@@ -15,7 +15,7 @@ class FlatbufferUnitTest: XCTestCase {
     override func setUp() {
         super.setUp()
         let bundle = Bundle(for: type(of: self))
-        let path = bundle.path(forResource: "monsterdata_test", ofType: "mon")!
+        let path = bundle.path(forResource: "monsterdata_test_swift", ofType: "mon")!
         self.data = try? Data(contentsOf: URL(fileURLWithPath: path), options: Data.ReadingOptions.alwaysMapped)
     }
     
@@ -119,6 +119,95 @@ class FlatbufferUnitTest: XCTestCase {
             _ = FlatbufferUnitTest._builderMonster(builder)
         }
     }
+    
+    func testPerformceBuilderIntensive() {
+        var nameList = ["Isidra Veit", "Sang Rehbein", "Clarence Vigliotti", "Coletta Harmer", "Winfred Shibley", "April Hockensmith", "Helga Esteban", "Vita Hotaling", "Leila Vanduzer", "Kelly Lasher", "Altagracia Baylor", "Beverley Tomasello", "Shawnee Benn", "Magdalen Chmiel", "Tobie Leduc", "Denese Harold", "Eula Andersen", "Brinda Hock", "Alina Mcnicholas", "Kimberlie Scheffel", "Cristin Timlin", "Mel Rosser", "Jimmy Aguiniga", "Lawanna Rule", "Nellie Goree", "Juli Shim", "Joycelyn Fulford", "Tammara Mechling", "Ted Stuckey", "Miriam Crouch", "Shera Caffey", "Dannette Veras", "Mike Gamboa", "Rubi Pomerantz", "Lanita Partington", "Leonora Kuehne", "Veta Veneziano", "Oscar Troupe", "Porsha Buczek", "Aretha Cormier", "Lucilla Lade", "Lecia Wethington", "Rachele Gerrity", "Meggan Pospisil", "Margareta Trimble", "Vella Ordaz", "Maudie Picha", "Audria Castilleja", "Christeen Slocum", "Sherley Rylander"]
+        let nameRange = 0..<nameList.count
+        
+        self.measure {
+            let builder = Builder(capacity: 1024)
+            let mainNameOffset = try! builder.createString(with: nameList[FlatbufferUnitTest._randomIndex(nameRange)])
+            let nestBuilder = Builder(capacity: 200)
+            // create nest monster
+            let nestCount = 1000
+            var tableNest = [UOffsetT](repeating: 0, count: nestCount)
+            for ii in 0..<nestCount {
+                let nameOffset = try! nestBuilder.createString(with: nameList[FlatbufferUnitTest._randomIndex(nameRange)])
+                let invectoryOffset = try! Monster.createInventoryVectory(nestBuilder, inventory: FlatbufferUnitTest._randomUByte())
+                let stringArrayOffset = try! Monster.createTestarrayofstringVector(nestBuilder, testarrayofstring: FlatbufferUnitTest._createRandomArrayString(nestBuilder, nameList: &nameList))
+                
+                try! Monster.startMonster(nestBuilder)
+                try? Monster.addPos(nestBuilder, posOffset: Vec3.createVec3(nestBuilder,
+                                                                        test3_b: Int(arc4random_uniform(30) + 5),
+                                                                        test3_a: Int(arc4random_uniform(20) + 8),
+                                                                        test2: Int(Color.Green.rawValue),
+                                                                        test1: Double(arc4random_uniform(110) + 12),
+                                                                        z: Float(arc4random_uniform(32) + 1),
+                                                                        y: Float(arc4random_uniform(22) + 14),
+                                                                        x: Float(arc4random_uniform(120) + 24)))
+                try? Monster.addHp(nestBuilder, hp: Int16(arc4random_uniform(200) + 11))
+                try? Monster.addName(nestBuilder, nameOffset: nameOffset)
+                try? Monster.addInventory(nestBuilder, inventoryOffset: invectoryOffset)
+                try? Monster.addTestarrayofstring(nestBuilder, testarrayofstringOffset: stringArrayOffset)
+                try? Monster.addTestbool(nestBuilder, testbool: arc4random_uniform(1) == 0)
+                
+                let monster = try! Monster.endMonster(nestBuilder)
+                try? Monster.finishBuffer(nestBuilder, offset: monster)
+                let monsterData = Array.init(try! nestBuilder.getData())
+                
+                tableNest[ii] = try! Monster.createTestnestedflatbufferVectory(builder, testnestedflatbuffer: monsterData)
+                // reset builder data
+                nestBuilder.reset(keepingCapacity: true)
+            }
+            //
+            let mainInvectoryOffset = try! Monster.createInventoryVectory(builder, inventory: FlatbufferUnitTest._randomUByte())
+            try! Monster.startMonster(builder)
+            try? Monster.addPos(builder, posOffset: Vec3.createVec3(builder,
+                                                                        test3_b: Int(arc4random_uniform(30) + 5),
+                                                                        test3_a: Int(arc4random_uniform(20) + 8),
+                                                                        test2: Int(Color.Green.rawValue),
+                                                                        test1: Double(arc4random_uniform(110) + 12),
+                                                                        z: Float(arc4random_uniform(32) + 1),
+                                                                        y: Float(arc4random_uniform(22) + 14),
+                                                                        x: Float(arc4random_uniform(120) + 24)))
+            try? Monster.addHp(builder, hp: Int16(arc4random_uniform(200) + 11))
+            try? Monster.addName(builder, nameOffset: mainNameOffset)
+            try? Monster.addInventory(builder, inventoryOffset: mainInvectoryOffset)
+            for i in (0..<tableNest.count).reversed() {
+                try? Monster.addTestnestedflatbuffer(builder, testnestedflatbufferOffset: tableNest[i])
+            }
+            try? Monster.addTestbool(builder, testbool: arc4random_uniform(1) == 0)
+            
+            let monster = try! Monster.endMonster(builder)
+            try? Monster.finishBuffer(builder, offset: monster)
+        }
+    }
+    
+    // builder test performance helper
+    
+    static func _randomIndex(_ range: CountableRange<Int>) -> Int {
+        return Int(arc4random_uniform(UInt32(range.upperBound))) + Int(range.lowerBound)
+    }
+    
+    static func _randomUByte() -> [UInt8] {
+        let count = _randomIndex(1..<20)
+        var bytes = [UInt8](repeating: 0, count: count)
+        for i in 0..<count {
+            bytes[i] = UInt8(i+2)
+        }
+        return bytes
+    }
+    
+    static func _createRandomArrayString(_ builder: Builder, nameList: inout [String]) -> [UOffsetT] {
+        let count = _randomIndex(1..<8)
+        var offsets = [UOffsetT](repeating: 0, count: count)
+        for i in 0..<count {
+            offsets[i] = try! builder.createString(with: nameList[i])
+        }
+        return offsets
+    }
+    
+    //
     
     static func _builderMonster(_ builder: Builder) -> UOffsetT {
         let names: [UOffsetT] = [

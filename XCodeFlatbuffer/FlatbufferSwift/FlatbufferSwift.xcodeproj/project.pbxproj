@@ -98,7 +98,6 @@
 		4CF6E6EC1E69BB9E00BD5A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF6E6F01E69BBF100BD5A16 /* include_test1.fbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = include_test1.fbs; sourceTree = "<group>"; };
 		4CF6E6F11E69BBF100BD5A16 /* include_test2.fbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = include_test2.fbs; sourceTree = "<group>"; };
-		4CF6E6F21E69BBF100BD5A16 /* JavaTest.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JavaTest.java; sourceTree = "<group>"; };
 		4CF6E6F31E69BBF100BD5A16 /* monster_test.fbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monster_test.fbs; sourceTree = "<group>"; };
 		4CF6E6F91E69BC4600BD5A16 /* Any.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Any.swift; sourceTree = "<group>"; };
 		4CF6E6FA1E69BC4600BD5A16 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -220,7 +219,6 @@
 		4CF6E6E91E69BB9E00BD5A16 /* FlatbufferUnitTest */ = {
 			isa = PBXGroup;
 			children = (
-				4CF6E6F21E69BBF100BD5A16 /* JavaTest.java */,
 				4CF6E7101E69BE8E00BD5A16 /* binary */,
 				4CF6E7071E69BC4C00BD5A16 /* flatbuffer */,
 				4CF6E6F81E69BBF700BD5A16 /* schema */,
@@ -1378,6 +1376,7 @@
 				4CF6E6EF1E69BB9E00BD5A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

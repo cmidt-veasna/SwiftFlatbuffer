@@ -74,14 +74,15 @@ public final class Builder {
 
     public static let VirtualTableMetadataFields = 2
     
-    private var data:       Data
-    private var minalign:   Int
-    private var vtable:     [UOffsetT] = []
-    private var objectEnd:  UOffsetT = 0
-    private var vtables:    [UOffsetT]
-    private var head:       UOffsetT
-    private var nested:     Bool = false
-    private var finished:   Bool = false
+    private var data:           Data
+    private var minalign:       Int
+    private var vtable:         [UOffsetT] = []
+    private var objectEnd:      UOffsetT = 0
+    private var vtables:        [UOffsetT]
+    private var head:           UOffsetT
+    private var nested:         Bool = false
+    private var finished:       Bool = false
+    private var forceDefaults:  Bool = false
     
     public init(capacity: Int) {
         var initialSize = capacity
@@ -103,14 +104,23 @@ public final class Builder {
         vtables = [UOffsetT](repeating: 0, count: 16)
     }
     
-    public func reset() {
-        data.removeAll()
+    // reset buffer data to 0 and all state. This useful when you want to reuse the Data
+    // to rebuild flatbuffer binary over again
+    public func reset(keepingCapacity: Bool = false) {
+        // keep byte allocated
+        data.removeAll(keepingCapacity: keepingCapacity)
+        data.resetBytes(in: 0..<data.count)
         vtable.removeAll()
         vtables.removeAll()
         head = UOffsetT(data.count)
         minalign = 1
         nested = false
         finished = false
+    }
+    
+    // force the default value to be written to buffer
+    public func forceDefault(_ forced: Bool) {
+        self.forceDefaults = forced
     }
     
     public func startObject(numberOfFields: Int) throws {
@@ -153,7 +163,7 @@ public final class Builder {
     // byte method
     
     public func putByte(offset: Int, with: Int8, byDefault: Int8) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putByte(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -172,7 +182,7 @@ public final class Builder {
     // unsigned byte method
     
     public func putUnsignedByte(offset: Int, with: UInt8, byDefault: UInt8) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try putUnsignedByte(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -191,7 +201,7 @@ public final class Builder {
     // short method
     
     public func putShort(offset: Int, with: Int16, byDefault: Int16) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putShort(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -210,7 +220,7 @@ public final class Builder {
     // unsigned short method
     
     public func putUnsignedShort(offset: Int, with: UInt16, byDefault: UInt16) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putUnsignedShort(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -229,7 +239,7 @@ public final class Builder {
     // int method
     
     public func putInt(offset: Int, with: Int32, byDefault: Int32) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putInt(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -248,7 +258,7 @@ public final class Builder {
     // unsigned int method
     
     public func putUnsignedInt(offset: Int, with: UInt32, byDefault: UInt32) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putUnsignedInt(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -267,7 +277,7 @@ public final class Builder {
     // long method
     
     public func putLong(offset: Int, with: Int64, byDefault: Int64) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putLong(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -286,7 +296,7 @@ public final class Builder {
     // usigned long method
     
     public func putUnsignedLong(offset: Int, with: UInt64, byDefault: UInt64) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putUnsignedLong(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -305,7 +315,7 @@ public final class Builder {
     // floating point method
     
     public func putFloat(offset: Int, with: Float, byDefault: Float) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putFloat(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -324,7 +334,7 @@ public final class Builder {
     // double
     
     public func putDouble(offset: Int, with: Double, byDefault: Double) throws {
-        if with != byDefault {
+        if self.forceDefaults || with != byDefault {
             try self.putDouble(with: with)
             self.vtable[offset] = self.offset()
         }
@@ -409,7 +419,7 @@ public final class Builder {
     }
     
     public func putOffset(virtualTable index: Int, offset: UOffsetT, defaultOffset: UOffsetT) throws {
-        if offset != defaultOffset {
+        if self.forceDefaults || offset != defaultOffset {
             try self.putUnsignedTableOffset(offset: offset)
             self.vtable[index] = self.offset()
         }
