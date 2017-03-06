@@ -1,5 +1,5 @@
 # Swift For Flatbuffer
-Unofficial Swift library and code generation for Flatbuffer
+Unofficial Swift library and code generator for Flatbuffer
 
 # Usage
 
