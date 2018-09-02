@@ -117,12 +117,10 @@ To test Flatbuffer, open Xcode project, Set the active schema to "FlatbufferUnit
 
 - Namespace
 
-Swift does not support multiple namespace in the a module or project.
+Swift does not support multiple namespace in a module or project.
 
-- Relection (&Resizing)
+- Reflection (&Resizing)
 
 This feature is support in C++.
 
 - JSON Parser
-
-Currently not implemented.
